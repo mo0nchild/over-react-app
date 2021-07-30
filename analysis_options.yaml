@@ -1,0 +1,68 @@
+# Defines a default set of lint rules enforced for projects at Google. For
+# details and rationale, see
+# https://github.com/dart-lang/pedantic#enabled-lints.
+
+include: package:pedantic/analysis_options.yaml
+
+# For lint rules and documentation, see http://dart-lang.github.io/linter/lints.
+
+# Uncomment to specify additional rules.
+# linter:
+#   rules:
+#     - camel_case_types
+      # annotate_overrides: true
+    # avoid_bool_literals_in_conditional_expressions: true
+    # avoid_classes_with_only_static_members: true
+    # avoid_double_and_int_checks: true
+    # avoid_null_checks_in_equality_operators: true
+    # avoid_returning_null_for_void: true
+    # avoid_returning_this: true
+    # avoid_setters_without_getters: true
+    # avoid_single_cascade_in_expression_statements: true
+    # avoid_slow_async_io: true
+    # avoid_types_on_closure_parameters: false
+    # avoid_unused_constructor_parameters: true
+    # avoid_void_async: true
+    # await_only_futures: true
+    # camel_case_types: true
+    # cancel_subscriptions: true
+    # close_sinks: true
+    # comment_references: true
+    # hash_and_equals: true
+    # implementation_imports: true
+    # iterable_contains_unrelated_type: true
+    # list_remove_unrelated_type: true
+    # literal_only_boolean_expressions: true
+    # no_adjacent_strings_in_list: true
+    # package_names: true
+    # prefer_collection_literals: true
+    # prefer_conditional_assignment: true
+    # prefer_const_declarations: true
+    # prefer_constructors_over_static_methods: true
+    # prefer_function_declarations_over_variables: true
+    # prefer_generic_function_type_aliases: true
+    # prefer_if_null_operators: true
+    # prefer_initializing_formals: true
+    # prefer_null_aware_operators: true
+    # prefer_single_quotes: true
+    # prefer_spread_collections: true
+    # prefer_typing_uninitialized_variables: true
+    # provide_deprecation_message: true
+    # test_types_in_equals: true
+    # unnecessary_await_in_return: true
+    # unnecessary_brace_in_string_interps: true
+    # unnecessary_getters_setters: true
+    # unnecessary_lambdas: true
+    # unnecessary_null_aware_assignments: true
+    # unnecessary_overrides: true
+    # unnecessary_statements: true
+    # unsafe_html: true
+    # use_function_type_syntax_for_parameters: true
+    # use_to_and_as_if_applicable: true
+    # void_checks: true
+
+# analyzer:
+#   exclude:
+#     - path/to/excluded/files/**
+
+    
