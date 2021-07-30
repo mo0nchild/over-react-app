@@ -1,12 +1,14 @@
 import 'package:over_react/over_react.dart';
 // import 'package:over_react/over_react_redux.dart';
 
-part 'app.over_react.g.dart';
+part 'app.over_react.g.dart'; //ignore:uri_has_not_been_generated
 
 UiFactory<MyWidgetProps> MyWidget =
     castUiFactory(_$MyWidget); // ignore: undefined_identifier
 
-mixin MyWidgetProps on UiProps {}
+mixin MyWidgetProps on UiProps {
+  String MainColor;
+}
 
 mixin MyWidgetState on UiState {
   bool isActive;
@@ -22,23 +24,11 @@ class MyWidgetComponent
 
   @override
   dynamic render() {
-    return (Dom.div()
-      ..style = {
-        'color': 'crimson',
-        'display': 'flex',
-        'flexDirection': 'row',
-        'justifyContent': 'center',
-        'margin': '100px 0px'
-      })((Dom.button()
+    return (Dom.div()..className = 'main-widget')((Dom.button()
       ..onClick = changeState
       ..style = {
-        'border': '2px solid crimson',
-        'backgroundColor': '#181818',
-        'color': 'crimson',
-        'height': '100px',
-        'width': '150px',
-        'borderRadius': '20px',
-        'fontSize': '20px'
+        'border': '2px solid ${props.MainColor}',
+        'color': '${props.MainColor}'
       })(state.isActive.toString()));
   }
 }
